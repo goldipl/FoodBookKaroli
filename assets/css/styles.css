@@ -61,7 +61,7 @@ p {
 
 .logoOverAnImage img {
     position: absolute;
-    width: 38rem;
+    width: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,9 +71,50 @@ p {
     padding-bottom: 1.2%;
 }
 
+@media (max-width: 1024px) {
+    .logoOverAnImage img {
+        width: 50%;
+    }
+}
+
 @media (max-width: 640px) {
     .logoOverAnImage img {
-        width: 27rem;
+        width: 70%;
+    }
+}
+
+@media (orientation:landscape) and (max-height: 670px) {
+    .logoOverAnImage img {
+        width: 30%;
+    }
+    a.arrow {
+        display: none;
+    }
+}
+
+@media (orientation:landscape) and (max-height: 570px) {
+    .logoOverAnImage img {
+        width: 20%;
+    }
+    a.arrow {
+        display: none;
+    }
+}
+
+@media (orientation:landscape) and (max-height: 470px) {
+    .logoOverAnImage img {
+        width: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    a.arrow {
+        display: none;
+    }
+}
+
+@media (orientation:portrait) and (max-height: 671px) {
+    .logoOverAnImage img {
+        width: 60%;
     }
 }
 
