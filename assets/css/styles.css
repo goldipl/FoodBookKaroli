@@ -43,6 +43,13 @@ p {
 }
 
 
+/* NAVBAR */
+
+.fixed-top {
+    position: absolute;
+}
+
+
 /* TEXT LOGO */
 
 .textLogo {
