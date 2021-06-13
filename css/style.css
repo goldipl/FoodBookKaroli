@@ -175,6 +175,7 @@ a.first {
 .menuListDrop:hover .menuListDrop-menu {
     opacity: 1;
     visibility: visible;
+    border-radius: 15px;
 }
 
 .menuListDrop-right:hover .menuListRight {
