@@ -133,6 +133,10 @@ h2 {
     background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
 }
 
+.menuList li a:hover {
+    color: #ffffff;
+}
+
 a.first {
     font-weight: 500;
 }
