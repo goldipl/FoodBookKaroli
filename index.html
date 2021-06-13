@@ -1,146 +1,196 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pl">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>Food Book Karoli</title>
-    <!-- Bootstrap core CSS -->
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icon -->
+    <link rel="icon" href="./img/icon.jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <!-- Title -->
+    <title>Food Book Karoli</title>
 </head>
 
 <body>
-    <!-- Header with navigation panel -->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><span class="textLogo">Food Book Karoli</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#">Strona główna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#breakfast">Śniadania</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#dinner">Obiady</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#desserts">Desery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">O mnie</a>
-                        </li>
-                    </ul>
+    <header class="headerBig">
+        <nav class="nav">
+            <a class="textLogo" href="index.html">Food Book Karoli</a>
+            <div class="menuButton">
+                <div class="menuButton__bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </div>
+            <ul class="menuList">
+                <!-- Nav list - Company -->
+                <li class="menuListFirstLine menuListDrop">
+                    <a href="#" class="menuListItem expandList first">Więcej informacji &#8628;</a>
+                    <ul class="menuListDrop-menu expand middle">
+                        <li><a href="#o_mnie" class="menuListItem menuListAnchorClose">O mnie</a></li>
+                        <li><a href="#co_mnie_wyroznia" class="menuListItem menuListAnchorClose">Co mnie wyróżnia</a></li>
+                        <li><a href="#przepisy" class="menuListItem menuListAnchorClose">Przepisy</a></li>
+                        <li><a href="#znajdziesz_mnie" class="menuListItem menuListAnchorClose">Znajdziesz mnie</a></li>
+                    </ul>
+                </li>
+                <!-- Nav list - References -->
+                <li class="menuListFirstLine">
+                    <a href="sniadania.html" class="menuListItem first">Śniadania</a>
+                </li>
+                <!-- Nav list - References -->
+                <li class="menuListFirstLine">
+                    <a href="obiady.html" class="menuListItem first">Obiady</a>
+                </li>
+                <!-- Nav list - References -->
+                <li class="menuListFirstLine">
+                    <a href="desery.html" class="menuListItem first">Desery</a>
+                </li>
+                <!-- Nav list - Contact -->
+                <li class="menuListFirstLine">
+                    <a href="kontakt.html" class="menuListItem first">Kontakt</a>
+                </li>
+            </ul>
         </nav>
-        <!-- End of the Header with navigation panel -->
-
-        <div class="imageContainer">
-            <img class="imageSmall" src="./assets/img/zdjecieTlo01.jpg" alt="Baner">
-            <img class="imageLarge" src="./assets/img/zdjecieTlo02.jpg" alt="Baner">
-            <img class="imageBig" src="./assets/img/zdjecieTlo03.jpg" alt="Baner">
-            <div class="logoOverAnImage"><img src="./assets/img/logo01.png" alt="Logo"></div>
-        </div>
-
-        <a class="arrow" href="#breakfast">
-            <div>⇩</div>
-        </a>
-
+        <img class="yearsimg" src="./img/logo01.png" alt="">
     </header>
-    <main>
-        <!-- Breakfast Section -->
-        <section class="bg-success" id="breakfast">
-            <div>
-                <h1 class="text-center text-center-padding">Śniadania</h1>
-                <p> Nunc et porttitor urna. Nulla id vehicula turpis. Aliquam erat volutpat. Nam condimentum laoreet interdum. Mauris tempor mollis felis. Praesent vehicula erat quis nisl cursus tincidunt. Donec aliquam justo quis dapibus maximus. Donec mi
-                    massa, ultricies nec sapien vel, tempus placerat lacus. Aliquam molestie massa velit, at vestibulum tortor malesuada eu. Duis at turpis in felis blandit elementum sed id est. Sed vel faucibus nibh, vel ultrices neque. Maecenas euismod
-                    dignissim leo, in hendrerit ipsum. Fusce eu pharetra mi. Aenean dictum magna ut ante dictum auctor. Pellentesque eget dignissim ipsum. Pellentesque venenatis purus in porta eleifend. Suspendisse neque elit, imperdiet eu sapien sed,
-                    venenatis aliquam est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id sapien vitae ipsum interdum eleifend eget a mauris. Aenean convallis tellus sed ultrices venenatis. Suspendisse
-                    urna augue, sagittis at fermentum sed, eleifend at purus. Morbi ornare auctor malesuada. Vestibulum varius enim purus, vitae aliquam nunc viverra at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
-                    in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse id quam turpis. Integer vestibulum posuere dui id facilisis. Duis eget nunc in tortor aliquam tempus. Aliquam facilisis leo vitae metus euismod congue. Donec eget
-                    quam ut justo tincidunt varius. Quisque consectetur magna molestie orci dapibus, ac sagittis urna blandit. Aenean quis bibendum dolor. Donec vitae vestibulum nisl, et sollicitudin massa. Phasellus id sapien porttitor, gravida sapien
-                    placerat, iaculis lectus. Nulla facilisi. Donec sed magna ullamcorper, rhoncus arcu at, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla ante at odio dapibus, nec
-                    scelerisque sem tincidunt. Donec eu enim at diam interdum aliquam. Nunc interdum, libero sed sollicitudin scelerisque, arcu velit vulputate erat, eget suscipit eros turpis ac ex. Vestibulum sit amet libero iaculis, luctus odio vel,
-                    suscipit arcu. Proin id ultrices lorem. Maecenas vehicula luctus scelerisque. Pellentesque ultricies metus quis varius convallis. Nullam tincidunt lacinia nisi eget tempor. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vivamus aliquam eget felis sit amet iaculis. Sed non mauris turpis. Duis hendrerit vulputate sem vel eleifend. Sed sed orci nec justo mattis tempor. </p>
+
+    <!-- Button Section -->
+    <section class="buttonSection">
+        <div class="divBtn"><a href="#o_mnie">Zapraszam do zapoznania się z moimi przepisami i resztą informacji</a></div>
+    </section>
+
+    <!-- Section 01 -->
+    <section class="whiteSection" id="o_mnie">
+        <h1 class="h1left ">O mnie</h1>
+        <div class="text_Img_Section">
+            <div class="text_Section text_margin_Section">
+                <p class="text_Section_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in sint? Doloremque assumenda nobis ipsumLorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in sint? Doloremque assumenda nobis ipsum esse numquam commodi ullam porro quia
+                    laudantium facilis eos modi sit quam sint, quae iure. esse numquam commodi ullam porro quia laudantium facilis eos modi sit quam sint, quae iure.
+                </p>
+                <p class="text_Section_p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in sint? Doloremque assumenda nobis ipsum esse numquam commodi ullam porro quia laudantium facilis eLorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, in sint? Doloremque
+                    assumenda nobis ipsum esse numquam commodi ullam porro quia laudantium facilis eos modi sit quam sint, quae iure.os modi sit quam sint, quae iure.
+                </p>
             </div>
-        </section>
-
-        <!-- Dinner Section -->
-        <section class="bg-light" id="dinner">
-            <div>
-                <h1 class="text-center text-center-padding">Obiady</h1>
-                <p> Nunc et porttitor urna. Nulla id vehicula turpis. Aliquam erat volutpat. Nam condimentum laoreet interdum. Mauris tempor mollis felis. Praesent vehicula erat quis nisl cursus tincidunt. Donec aliquam justo quis dapibus maximus. Donec mi
-                    massa, ultricies nec sapien vel, tempus placerat lacus. Aliquam molestie massa velit, at vestibulum tortor malesuada eu. Duis at turpis in felis blandit elementum sed id est. Sed vel faucibus nibh, vel ultrices neque. Maecenas euismod
-                    dignissim leo, in hendrerit ipsum. Fusce eu pharetra mi. Aenean dictum magna ut ante dictum auctor. Pellentesque eget dignissim ipsum. Pellentesque venenatis purus in porta eleifend. Suspendisse neque elit, imperdiet eu sapien sed,
-                    venenatis aliquam est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id sapien vitae ipsum interdum eleifend eget a mauris. Aenean convallis tellus sed ultrices venenatis. Suspendisse
-                    urna augue, sagittis at fermentum sed, eleifend at purus. Morbi ornare auctor malesuada. Vestibulum varius enim purus, vitae aliquam nunc viverra at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
-                    in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse id quam turpis. Integer vestibulum posuere dui id facilisis. Duis eget nunc in tortor aliquam tempus. Aliquam facilisis leo vitae metus euismod congue. Donec eget
-                    quam ut justo tincidunt varius. Quisque consectetur magna molestie orci dapibus, ac sagittis urna blandit. Aenean quis bibendum dolor. Donec vitae vestibulum nisl, et sollicitudin massa. Phasellus id sapien porttitor, gravida sapien
-                    placerat, iaculis lectus. Nulla facilisi. Donec sed magna ullamcorper, rhoncus arcu at, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla ante at odio dapibus, nec
-                    scelerisque sem tincidunt. Donec eu enim at diam interdum aliquam. Nunc interdum, libero sed sollicitudin scelerisque, arcu velit vulputate erat, eget suscipit eros turpis ac ex. Vestibulum sit amet libero iaculis, luctus odio vel,
-                    suscipit arcu. Proin id ultrices lorem. Maecenas vehicula luctus scelerisque. Pellentesque ultricies metus quis varius convallis. Nullam tincidunt lacinia nisi eget tempor. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vivamus aliquam eget felis sit amet iaculis. Sed non mauris turpis. Duis hendrerit vulputate sem vel eleifend. Sed sed orci nec justo mattis tempor. </p>
+            <div class="img_Section">
+                <img src="./img/zdjecie_profilowe.jpg" alt="" width="70%">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Desserts Section -->
-        <section class="bg-success" id="desserts">
-            <div>
-                <h1 class="text-center text-center-padding">Desery</h1>
-                <p> Nunc et porttitor urna. Nulla id vehicula turpis. Aliquam erat volutpat. Nam condimentum laoreet interdum. Mauris tempor mollis felis. Praesent vehicula erat quis nisl cursus tincidunt. Donec aliquam justo quis dapibus maximus. Donec mi
-                    massa, ultricies nec sapien vel, tempus placerat lacus. Aliquam molestie massa velit, at vestibulum tortor malesuada eu. Duis at turpis in felis blandit elementum sed id est. Sed vel faucibus nibh, vel ultrices neque. Maecenas euismod
-                    dignissim leo, in hendrerit ipsum. Fusce eu pharetra mi. Aenean dictum magna ut ante dictum auctor. Pellentesque eget dignissim ipsum. Pellentesque venenatis purus in porta eleifend. Suspendisse neque elit, imperdiet eu sapien sed,
-                    venenatis aliquam est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id sapien vitae ipsum interdum eleifend eget a mauris. Aenean convallis tellus sed ultrices venenatis. Suspendisse
-                    urna augue, sagittis at fermentum sed, eleifend at purus. Morbi ornare auctor malesuada. Vestibulum varius enim purus, vitae aliquam nunc viverra at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
-                    in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse id quam turpis. Integer vestibulum posuere dui id facilisis. Duis eget nunc in tortor aliquam tempus. Aliquam facilisis leo vitae metus euismod congue. Donec eget
-                    quam ut justo tincidunt varius. Quisque consectetur magna molestie orci dapibus, ac sagittis urna blandit. Aenean quis bibendum dolor. Donec vitae vestibulum nisl, et sollicitudin massa. Phasellus id sapien porttitor, gravida sapien
-                    placerat, iaculis lectus. Nulla facilisi. Donec sed magna ullamcorper, rhoncus arcu at, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla ante at odio dapibus, nec
-                    scelerisque sem tincidunt. Donec eu enim at diam interdum aliquam. Nunc interdum, libero sed sollicitudin scelerisque, arcu velit vulputate erat, eget suscipit eros turpis ac ex. Vestibulum sit amet libero iaculis, luctus odio vel,
-                    suscipit arcu. Proin id ultrices lorem. Maecenas vehicula luctus scelerisque. Pellentesque ultricies metus quis varius convallis. Nullam tincidunt lacinia nisi eget tempor. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vivamus aliquam eget felis sit amet iaculis. Sed non mauris turpis. Duis hendrerit vulputate sem vel eleifend. Sed sed orci nec justo mattis tempor. </p>
+    <!-- Section 02 -->
+    <section class="colorSection" id="co_mnie_wyroznia">
+        <h1 class="h1left ">Co mnie wyróżnia</h1>
+        <div class="containerLabels">
+            <div class="citem">
+                <div class="containerLabels_Text">
+                    <p>
+                        Text text text text text text text text text text text text text
+                    </p>
+                </div>
             </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section class="bg-light" id="aboutme">
-            <div>
-                <h1 class="text-center text-center-padding">O mnie</h1>
-                <p> Nunc et porttitor urna. Nulla id vehicula turpis. Aliquam erat volutpat. Nam condimentum laoreet interdum. Mauris tempor mollis felis. Praesent vehicula erat quis nisl cursus tincidunt. Donec aliquam justo quis dapibus maximus. Donec mi
-                    massa, ultricies nec sapien vel, tempus placerat lacus. Aliquam molestie massa velit, at vestibulum tortor malesuada eu. Duis at turpis in felis blandit elementum sed id est. Sed vel faucibus nibh, vel ultrices neque. Maecenas euismod
-                    dignissim leo, in hendrerit ipsum. Fusce eu pharetra mi. Aenean dictum magna ut ante dictum auctor. Pellentesque eget dignissim ipsum. Pellentesque venenatis purus in porta eleifend. Suspendisse neque elit, imperdiet eu sapien sed,
-                    venenatis aliquam est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id sapien vitae ipsum interdum eleifend eget a mauris. Aenean convallis tellus sed ultrices venenatis. Suspendisse
-                    urna augue, sagittis at fermentum sed, eleifend at purus. Morbi ornare auctor malesuada. Vestibulum varius enim purus, vitae aliquam nunc viverra at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis
-                    in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse id quam turpis. Integer vestibulum posuere dui id facilisis. Duis eget nunc in tortor aliquam tempus. Aliquam facilisis leo vitae metus euismod congue. Donec eget
-                    quam ut justo tincidunt varius. Quisque consectetur magna molestie orci dapibus, ac sagittis urna blandit. Aenean quis bibendum dolor. Donec vitae vestibulum nisl, et sollicitudin massa. Phasellus id sapien porttitor, gravida sapien
-                    placerat, iaculis lectus. Nulla facilisi. Donec sed magna ullamcorper, rhoncus arcu at, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fringilla ante at odio dapibus, nec
-                    scelerisque sem tincidunt. Donec eu enim at diam interdum aliquam. Nunc interdum, libero sed sollicitudin scelerisque, arcu velit vulputate erat, eget suscipit eros turpis ac ex. Vestibulum sit amet libero iaculis, luctus odio vel,
-                    suscipit arcu. Proin id ultrices lorem. Maecenas vehicula luctus scelerisque. Pellentesque ultricies metus quis varius convallis. Nullam tincidunt lacinia nisi eget tempor. Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vivamus aliquam eget felis sit amet iaculis. Sed non mauris turpis. Duis hendrerit vulputate sem vel eleifend. Sed sed orci nec justo mattis tempor. </p>
+            <div class="citem">
+                <div class="containerLabels_Text">
+                    <p>
+                        Text text text text text text text text text text text text text
+                    </p>
+                </div>
             </div>
-        </section>
+            <div class="citem">
+                <div class="containerLabels_Text">
+                    <p>
+                        Text text text text text text text text text text text text text
+                    </p>
+                </div>
+            </div>
+            <div class="citem">
+                <div class="containerLabels_Text">
+                    <p>
+                        Text text text text text text text text text text text text text
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- FOOTER -->
-        <footer class="footer bg-success">
-            <p class="float-end"><a type="button" class="btn btn-outline-dark" href="#">▲</a></p>
-            <p>Food Book Karoli &copy; 2021 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-    </main>
-    <!-- Scipts -->
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Section 03 -->
+    <section class="whiteSection" id="przepisy">
+        <h1 class="h1left ">Przepisy</h1>
+        <div class="text_margin_Section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates, officiis, impedit consequuntur ad maxime quod, blanditiis reiciendis quae doloribus culpa qui inventore vero minus adipisci facilis quibusdam! Quibusdam, quo! Sed magni molestias
+                corrupti doloremque, recusandae asperiores magnam voluptatem perferendis excepturi debitis adipisci animi dignissimos, aspernatur sequi dolorum ducimus ex omnis dolores ut placeat vitae quas doloribus ab veritatis. Nobis! Dolores consectetur
+                eligendi inventore molestiae qui delectus sed ex fuga fugit, veniam ipsam obcaecati minus reprehenderit esse, architecto provident quas eos recusandae perspiciatis at reiciendis voluptatem animi. Sunt, repudiandae accusamus.
+            </p>
+        </div>
+        <div class="recipeLabels">
+            <div class="recipeitem">
+                <a href="sniadania.html">
+                    <div class="recipecontainerLabels_Img">
+                        <img src="./img/jedzenie01.jpg" alt="" width="200px">
+                    </div>
+                    <div class="recipeLabels_Text">
+                        <p>
+                            Śniadania
+                        </p>
+                    </div>
+                </a>
+            </div>
 
+            <div class="recipeitem">
+                <a href="obiady.html">
+                    <div class="recipecontainerLabels_Img">
+                        <img src="./img/jedzenie01.jpg" alt="" width="200px">
+                    </div>
+                    <div class="recipeLabels_Text">
+                        <p>
+                            Obiady
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="recipeitem">
+                <a href="desery.html">
+                    <div class="recipecontainerLabels_Img">
+                        <img src="./img/jedzenie01.jpg" alt="" width="200px">
+                    </div>
+                    <div class="recipeLabels_Text">
+                        <p>
+                            Desery
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 04 -->
+    <section class="colorSection" id="znajdziesz_mnie">
+        <h1 class="h1left ">Znajdziesz mnie</h1>
+        <div class="text_margin_Section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, omnis dolor quam nesciunt laboriosam tempora officia illo accusantium minus sequi. Reprehenderit expedita ipsa similique illum alias vel vero ipsum nisi? Molestias praesentium earum tempore
+                reiciendis soluta ea delectus eaque nobis, repudiandae veniam assumenda sit labore nemo blanditiis sequi provident perspiciatis, quis aut corrupti, rem similique? Quam soluta maiores illo earum. Atque, voluptates! Praesentium nobis quaerat
+                officiis libero repellat fugit! Corrupti hic corporis assumenda fugit ex, amet totam facere, ratione debitis dolorem suscipit. Recusandae rem maiores iste assumenda aperiam ab itaque.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="colorSection footerSection">
+        <div class="footerCopyright">
+            Copyright © 2021 - Food Book Karoli
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

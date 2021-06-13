@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.textLogo {
+    font-family: 'Pacifico', sans-serif;
+    color: #0c6029 !important;
+    font-size: 2.0rem !important;
+}
+
+.yearsimg {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    width: 25%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 1% 0;
+    transform: translate(50%, 50%);
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+.p01 {
+    padding-bottom: 0;
+}
+
+.h1left {
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+}
+
+.h2left {
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+    font-size: 1.4rem;
+}
+
+.h1left::before,
+.h2left::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #0c6029;
+}
+
+
+/* === Navigation === */
+
+.nav {
+    background-color: #FFFFFF;
+    position: fixed;
+    box-shadow: 6px 6px 9px 0 rgb(12 96 41 / 0.25);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 2.0rem;
+    z-index: 999;
+    line-height: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav a.menuListItem.first {
+    padding: 1rem 1rem;
+}
+
+.nav a.menuListItem {
+    padding: 0.5rem 1.0rem;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.menuList {
+    display: flex;
+    align-items: center;
+}
+
+.menuList li {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid #0c6029;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.menuList li li {
+    transition: 0.2s linear;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.menuList li:hover {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+}
+
+a.first {
+    font-weight: 500;
+}
+
+
+/* === menuListDrop === */
+
+.menuListDrop {
+    position: relative;
+}
+
+.menuListDrop-menu,
+.menuListRight {
+    position: absolute;
+    background: #FFFFFF;
+    width: 100%;
+    top: 52px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, .1);
+    transition: all 0.4s linear;
+}
+
+.menuListRight {
+    top: 0;
+    left: 110%;
+}
+
+.menuListItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuListDrop:hover .menuListDrop-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuListDrop-right:hover .menuListRight {
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* === Navigation Menu Button === */
+
+.menuButton {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menuButton__bars {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #0c6029;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.open .bar2 {
+    display: none;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, 6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.fas.fa-angle-down {
+    margin-left: 8px;
+}
+
+@media (max-width: 340px) {
+    .menuList li a {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+}
+
+.headerBig {
+    height: 90vh;
+    background: url(../img/tlo01.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.headerLarge00 {
+    background: url(../img/tlo01.jpg);
+}
+
+.headerLarge00 {
+    height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1.h1OverImg {
+    position: absolute;
+    font-size: 3.0rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 60%;
+    left: 5%;
+    width: 40%;
+    transform: translate(10%, -50%);
+}
+
+h1.h1OverImg span {
+    background-color: #0c6029;
+    line-height: 145%;
+    padding: 5px 0;
+}
+
+h1.h1OverImgLarge {
+    position: absolute;
+    font-weight: 300;
+    color: #FFFFFF;
+    left: 5%;
+    transform: translate(10%, -50%);
+    bottom: 0;
+    font-size: 3.0rem;
+    margin: 0 auto;
+    width: 80% !important;
+    background: none;
+}
+
+h1.h1OverImgLarge span {
+    background-color: #0c6029;
+    box-shadow: 0.5em 0 0 #0c6029, -0.5em 0 0 #0c6029;
+    line-height: 140%;
+    padding: 5px;
+}
+
+.whiteSection {
+    background-color: #fff;
+    color: black;
+}
+
+.colorSection {
+    background: #93a89b;
+    color: black;
+}
+
+section h1,
+section h2 {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section p {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+
+/* Button Section */
+
+.buttonSection {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-around;
+    color: #FFFFFF;
+    background-color: #0c6029;
+    padding: 0;
+}
+
+.divBtn {
+    margin: auto 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: default;
+    transition: 0.3s linear;
+}
+
+.divBtn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.divBtn:hover {
+    transform: scale(1.1);
+}
+
+
+/* Img Text Section */
+
+.text_Img_Section {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_Img_Section .text_Section {
+    width: 100%;
+}
+
+.text_Img_Section .text_Section_p {
+    width: 100%;
+}
+
+.text_Img_Section .img_Section {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-left: 40px;
+}
+
+.text_Img_Section .img_Section img {
+    border-radius: 25px;
+}
+
+
+/* Google Map */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 350px;
+    width: 100%;
+}
+
+#gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 350px;
+    width: 100%;
+}
+
+
+/* ==== FOOTER ==== */
+
+footer {
+    text-align: center;
+}
+
+.footerSection {
+    background: none;
+    background-color: #0c6029;
+    color: #FFFFFF;
+}
+
+.footerCopyright {
+    padding: 16px;
+}
+
+
+/* ===== CONTAINER LABELS ===== */
+
+.citem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.containerLabels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.containerLabels>div {
+    flex-basis: 46%;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.containerLabels_Text p {
+    width: 100%;
+}
+
+
+/* Recipes section */
+
+.recipeitem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fcfafb;
+}
+
+.recipeLabels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 40px auto;
+}
+
+.recipeLabels .recipeitem {
+    flex-direction: column;
+    flex-basis: 20%;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    flex-grow: 1;
+    border-radius: 15px;
+}
+
+.recipeLabels .recipeitem:hover {
+    border: 2px solid #0c6029;
+}
+
+.recipeLabels_Text p {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.recipeLabels .recipecontainerLabels_Img {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: 24px;
+}
+
+.recipeLabels .recipecontainerLabels_Img img {
+    border-radius: 15px;
+}
+
+.recipeLabels a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* TEXT MARGIN */
+
+.text_margin_Section {
+    padding-top: 24px;
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+    h1.h1OverImg {
+        font-size: 2.5rem;
+        width: 37%;
+    }
+    h1.h1OverImgLarge {
+        font-size: 2.0rem;
+    }
+    .divBtn {
+        font-size: 1.2rem;
+    }
+    h1.h1OverImgLarge span {
+        line-height: 160%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .menuButton {
+        display: flex;
+    }
+    .nav .menuList {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        background: #FFFFFF;
+        display: block;
+        padding: 1.0rem;
+        line-height: 1.6rem;
+        overflow-y: auto;
+        transform: translateX(-100vw);
+        transition: 0.3s linear;
+        z-index: -1;
+    }
+    .menuList.open {
+        transform: translateX(0);
+    }
+    .menuList li {
+        margin: 15px 10px;
+    }
+    .menuList li a {
+        padding: 0 1rem;
+        display: block;
+        font-size: 1.3rem;
+    }
+    .menuList li:hover {
+        background-color: transparent;
+    }
+    .menuList .menuListDrop-menu,
+    .menuList .menuListRight {
+        position: static;
+        opacity: 1;
+        top: 4rem;
+        visibility: visible;
+        width: 100%;
+        max-height: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        overflow: hidden;
+        transition: all 0.2s linear;
+        box-shadow: none;
+    }
+    .expandList.open+.expand {
+        max-height: 100%;
+        transform: scaleY(1);
+    }
+    .expand li {
+        margin: 0;
+    }
+    .expand li a {
+        font-size: 1.1rem;
+        border-bottom: 1px solid #0c6029;
+        padding-bottom: 0.9rem;
+    }
+    .expand li:last-of-type a {
+        border-bottom: none;
+        padding-bottom: 0.4rem;
+    }
+    .expand li:first-of-type a {
+        padding-top: 0.4rem;
+    }
+    .fas.fa-angle-right {
+        margin-left: 8px;
+    }
+    .menuListDrop-menu.expand.middle,
+    .menuListDrop-menu.expand.long {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .menuList .menuListFirstLine:last-of-type {
+        margin-bottom: 100px;
+    }
+    section h1,
+    section h2,
+    section p {
+        width: 90%;
+    }
+    .imgTextSection {
+        flex-direction: column;
+    }
+    .imgTextSection .imgTextSection__Text p {
+        text-align: center;
+    }
+    h1.h1OverImg {
+        font-size: 1.4rem;
+    }
+    h1.h1OverImgLarge {
+        font-size: 1.2rem;
+    }
+    .text_Img_Section {
+        flex-direction: column;
+        width: 90%;
+    }
+    .text_Img_Section .img_Section {
+        width: 60%;
+        margin-left: 0;
+    }
+    .citem {
+        flex-basis: 100% !important;
+    }
+    .containerLabels {
+        width: 100%;
+    }
+    .historySection {
+        flex-direction: column;
+    }
+    .rightsmallpdiv {
+        margin-left: 0;
+        width: 100%;
+    }
+    .recipeLabels>div {
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+    .divBtn {
+        font-size: 1.2rem;
+    }
+    h1.h1OverImgLarge span {
+        line-height: 180%;
+    }
+    h1.h1OverImg span {
+        line-height: 160%;
+    }
+    .nav {
+        padding: 1.0rem 2.0rem;
+    }
+    .yearsimg {
+        width: 50%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1099px) {
+    .recipeLabels {
+        width: 100%;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 849px) {
+    .recipeLabels>div {
+        flex-basis: 40% !important;
+        flex-grow: 1;
+    }
+    .buttonSection {
+        display: none;
+    }
+    .headerBig {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .prizeLabels>div {
+        flex-basis: 100%;
+    }
+    h1.h1OverImg {
+        width: 60%;
+    }
+}
+
+@media (max-width: 790px) {
+    .footerFlexSection {
+        flex-direction: column;
+    }
+    .footerFlexSection__Two .footerp {
+        text-align: center;
+        margin-top: -16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button01 {
+        font-size: 1.3rem;
+        padding: 0.6rem 1.2rem;
+        width: 140px;
+    }
+    .text_Img_Section .img_Section {
+        width: 100%;
+        margin-left: 0;
+    }
+    .recipeLabels>div {
+        flex-basis: 100% !important;
+        flex-grow: 1;
+    }
+    h1.h1OverImg span {
+        line-height: 180%;
+    }
+}
+
+@media (max-width:400px) {
+    .textLogo {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (max-width: 799px) and (orientation: landscape) and (max-height: 600px) {
+    .yearsimg {
+        right: 0;
+    }
+}

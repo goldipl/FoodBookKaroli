@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Live](#live)
+* [Live](#live-star2)
 
 ## General info
 Karola Gotuje - bootstrap cooking webpage
