@@ -126,7 +126,7 @@ h2 {
     transition: 0.2s linear;
     margin-left: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 15px;
 }
 
 .menuList li:hover {
