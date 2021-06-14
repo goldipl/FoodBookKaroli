@@ -438,11 +438,14 @@ footer {
 }
 
 .containerLabels>div {
-    flex-basis: 46%;
-    margin: 2%;
+    flex-basis: 30%;
+    font-size: 20px;
+    padding: 24px;
+    margin: 1%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-bottom: 10px;
     border-radius: 15px;
+    flex-grow: 1;
 }
 
 .containerLabels_Text p {
