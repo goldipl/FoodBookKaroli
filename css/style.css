@@ -73,6 +73,17 @@ h2 {
     background-color: #0c6029;
 }
 
+.btn01 {
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    border: 2px solid #0c6029;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
 
 /* === Navigation === */
 
