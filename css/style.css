@@ -75,13 +75,14 @@ h2 {
 
 .btn01 {
     display: block;
+    font-size: 16px;
     margin: 0 auto;
-    margin-left: auto;
     background-color: #ffffff;
     border: 2px solid #0c6029;
     border-radius: 16px;
     cursor: pointer;
-    margin-left: 16px;
+    margin-left: 12.5%;
+    padding: 10px 20px;
 }
 
 
@@ -140,8 +141,10 @@ h2 {
     border-radius: 15px;
 }
 
-.menuList li:hover {
+.menuList li:hover,
+.btn01:hover {
     background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    color: #ffffff;
 }
 
 .menuList li a:hover {
