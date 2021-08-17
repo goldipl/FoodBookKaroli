@@ -532,6 +532,44 @@ footer {
     padding-top: 24px;
 }
 
+.left {
+    text-align: left;
+}
+
+.greenUnderline {
+    text-decoration: #00a950 underline 3px;
+}
+
+p.recipeList {
+    position: relative;
+    text-align: left;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: -8px;
+}
+
+.recipeList::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    bottom: 20px;
+    border-radius: 10%;
+    background-color: #0c6029;
+}
+
+.recipeImage img {
+    display: block;
+    margin: 40px auto;
+    width: 30%;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #00a950;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 
@@ -704,6 +742,9 @@ footer {
     }
     .headerBig {
         height: 100vh;
+    }
+    .recipeImage img {
+        width: 80%;
     }
 }
 
